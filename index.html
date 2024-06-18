@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Martina Varela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" sizes="150x150" href="foto/hola.jpeg" > 
+
+    <style>
+        footer {
+            background-image: url('foto/hola.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: center;
+        }
+  
+  .hexagon-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+   
+  }
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: rgb(137, 117, 223);
+    position: relative;
+    margin: 27.5px 0;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid rgb(137, 117, 223);
+   
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid rgb(137, 117, 223);
+}
+@keyframes moveHexagons {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hexagon {
+    animation-name: moveHexagons;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+</style>
+</head>
+<body>
+   
+    <h1> Martina Varela </h1>
+    <h2> <p>Bienvenidos a mi portfolio, donde se van a encontrar todos los trabajos que hice hasta ahora en la carrera de diseño integral de la universidad Torcuato Ditella. </p>
+    </h2>
+    <div class="hexagon-container">
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <h3>PORTFOLIO </h3>
+    <h4> 
+           <a href="https://www.linkedin.com/in/martina-varela-44b771285/" target="_blank" title="linkedin"> linkedin</a>
+        
+        
+</h4>
+
+<main>
+<div><a href="foto/foto1.jpg" data-lightbox="galeria"><img src="foto/foto1.jpg" alt="foto1"></a></div>
+<div><a href="foto/foto2.jpg" data-lightbox="galeria"><img src="foto/foto2.jpg" alt="foto2"></a></div>
+<div><a href="foto/foto3.jpg" data-lightbox="galeria"><img src="foto/foto3.jpg" alt="foto3"></a></div>
+<div><a href="foto/foto4.jpg" data-lightbox="galeria"><img src="foto/foto4.jpg" alt="foto4"></a></div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+
+
+<video src="foto/video01.mp4" controls width="1280" height="720"></video>
+
+<footer>
+    <p>Portfolio Martina Varela</p>
+</footer>
+
+
+
+</body>
+</html>
